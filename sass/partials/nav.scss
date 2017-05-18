@@ -1,0 +1,56 @@
+@import 'colors';
+@import 'mixins';
+
+nav {
+  height: 3.4375em; // 55px
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .logo {
+    width: 2.65em;
+    margin-left: 0.625em;
+  }
+
+  ul {
+
+
+    width: auto;
+
+    li {
+      display: inline-block;
+      margin-right: 2em;
+
+      &:last-child {
+        margin-right: 0.625em;
+      }
+
+      a {
+        text-decoration: none;
+        color: $light;
+        text-transform: uppercase;
+        @include transition(color 1s);
+
+
+        &.active {
+          color: $med;
+          border-bottom: 1px solid $med;
+          padding-bottom: 2px;
+
+          &:hover {
+            border-bottom: none;
+          }
+        }
+
+        &:hover {
+          color: $accent;
+
+        }
+
+
+      }
+    }
+
+  }
+}
