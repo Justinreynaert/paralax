@@ -1,0 +1,52 @@
+@import 'colors';
+@import 'mixins';
+
+footer {
+  padding: 0 0.625em;
+
+  height: 5rem;
+  font-size: 0.75em;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-weight: 300;
+
+  background-color: $white;
+
+
+
+
+  .special {
+    font-weight: 600;
+    font-style: italic;
+    color: $light;
+  }
+
+  ul {
+
+    display: block;
+    float: right;
+    width: auto;
+
+    li {
+      display: inline-block;
+      margin-right: 2em;
+
+      &:last-child {
+        margin-right: 0.625em;
+      }
+
+
+      img {
+        width: 48px;
+        height: auto;
+      }
+    }
+
+
+
+  }
+
+}

@@ -3,15 +3,18 @@
 @import 'fonts';
 @import 'mixins.scss';
 @import 'helpers';
+
 @import 'parallax';
 @import 'nav';
 @import 'hero';
 @import 'recruit';
+@import 'news';
+@import 'footer';
 
 
 
 body {
-  height: 3000px;
+
 }
 
 

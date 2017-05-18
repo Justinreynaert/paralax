@@ -1,0 +1,106 @@
+@import 'colors';
+@import 'mixins';
+
+
+#news {
+  background-color: $light;
+
+  h1 {
+    margin: 0;
+    color: $white;
+    font-weight: 600;
+    padding-top: 1em;
+    font-size: 2.75em;
+  }
+
+  hr {
+    border:0;
+    height: 1px;
+    background: $white;
+  }
+
+  article {
+    color: $paragraphs;
+    background-color: $white;
+    padding: 0.625em;
+    margin-bottom: 1em;
+    @include clearfix;
+
+    h2 {
+      margin: 0;
+      margin-bottom: 0.3em;
+      font-weight: 400;
+
+    }
+
+    h3 {
+      font-size: 0.75em;
+      margin:0;
+      text-transform: lowercase;
+    }
+
+    hr {
+      margin-top: 1em;
+      margin-bottom: 0;
+      border:0;
+      height: 1px;
+      background: $text;
+      opacity: 0.2;
+    }
+
+
+
+    .content {
+      box-sizing: border-box;
+      margin-top: 1em;
+    }
+
+    .left {
+      box-sizing: border-box;
+      float: left;
+      width: 25%;
+      padding-right: 2em;
+
+
+      > img {
+
+        max-width: 100%;
+      }
+    }
+
+    .right {
+      float: right;
+      width: 75%;
+
+      p {
+
+        font-size: 0.875em; //14px;
+        text-align: justify;
+        line-height: 1.2em;
+        margin-top: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: $light;
+        @include transition(color 1s);
+
+        &:hover {
+          color: $dark;
+        }
+
+        &.continue {
+
+
+
+          &:after {
+            font-size: 0.7em;
+            font-family: fontello;
+            content: "\00a0\e800\e800";
+          }
+        }
+      }
+
+    }
+  }
+}

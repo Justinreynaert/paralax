@@ -1,0 +1,99 @@
+/* line 5, ../../sass/partials/news.scss */
+#news {
+  background-color: #8b96fc;
+}
+/* line 8, ../../sass/partials/news.scss */
+#news h1 {
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+  padding-top: 1em;
+  font-size: 2.75em;
+}
+/* line 16, ../../sass/partials/news.scss */
+#news hr {
+  border: 0;
+  height: 1px;
+  background: #fff;
+}
+/* line 22, ../../sass/partials/news.scss */
+#news article {
+  color: #686868;
+  background-color: #fff;
+  padding: 0.625em;
+  margin-bottom: 1em;
+}
+/* line 2, ../../sass/partials/mixins.scss */
+#news article:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 29, ../../sass/partials/news.scss */
+#news article h2 {
+  margin: 0;
+  margin-bottom: 0.3em;
+  font-weight: 400;
+}
+/* line 36, ../../sass/partials/news.scss */
+#news article h3 {
+  font-size: 0.75em;
+  margin: 0;
+  text-transform: lowercase;
+}
+/* line 42, ../../sass/partials/news.scss */
+#news article hr {
+  margin-top: 1em;
+  margin-bottom: 0;
+  border: 0;
+  height: 1px;
+  background: #5d5d5d;
+  opacity: 0.2;
+}
+/* line 53, ../../sass/partials/news.scss */
+#news article .content {
+  box-sizing: border-box;
+  margin-top: 1em;
+}
+/* line 58, ../../sass/partials/news.scss */
+#news article .left {
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  padding-right: 2em;
+}
+/* line 65, ../../sass/partials/news.scss */
+#news article .left > img {
+  max-width: 100%;
+}
+/* line 71, ../../sass/partials/news.scss */
+#news article .right {
+  float: right;
+  width: 75%;
+}
+/* line 75, ../../sass/partials/news.scss */
+#news article .right p {
+  font-size: 0.875em;
+  text-align: justify;
+  line-height: 1.2em;
+  margin-top: 0;
+}
+/* line 83, ../../sass/partials/news.scss */
+#news article .right a {
+  text-decoration: none;
+  color: #8b96fc;
+  -moz-transition: color 1s;
+  -o-transition: color 1s;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+/* line 88, ../../sass/partials/news.scss */
+#news article .right a:hover {
+  color: #4a5081;
+}
+/* line 96, ../../sass/partials/news.scss */
+#news article .right a.continue:after {
+  font-size: 0.7em;
+  font-family: fontello;
+  content: "\00a0\e800\e800";
+}

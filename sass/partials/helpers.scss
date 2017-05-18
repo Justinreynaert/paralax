@@ -1,6 +1,9 @@
 .container {
+  box-sizing: border-box;
   width: 1024px;
   margin: 0 auto;
+  padding: 0 0.625em 2.25em 0.625em;
+
 }
 
 
@@ -10,4 +13,12 @@
 
 .right {
   float: right;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 600;
 }

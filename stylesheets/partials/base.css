@@ -476,25 +476,47 @@ template {
   display: none;
 }
 
-/* line 7, ../../sass/partials/fonts.scss */
+@font-face {
+  font-family: 'fontello';
+  src: url("fontello/fontello.eot?60295365");
+  src: url("fontello/fontello.eot?60295365#iefix") format("embedded-opentype"), url("fontello/fontello.woff2?60295365") format("woff2"), url("fontello/fontello.woff?60295365") format("woff"), url("fontello/fontello.ttf?60295365") format("truetype"), url("fontello/fontello.svg?60295365#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 19, ../../sass/partials/fonts.scss */
 body {
   font-family: "Open Sans", sans-serif;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* line 1, ../../sass/partials/helpers.scss */
 .container {
+  box-sizing: border-box;
   width: 1024px;
   margin: 0 auto;
+  padding: 0 0.625em 2.25em 0.625em;
 }
 
-/* line 7, ../../sass/partials/helpers.scss */
+/* line 10, ../../sass/partials/helpers.scss */
 .left {
   float: left;
 }
 
-/* line 11, ../../sass/partials/helpers.scss */
+/* line 14, ../../sass/partials/helpers.scss */
 .right {
   float: right;
+}
+
+/* line 18, ../../sass/partials/helpers.scss */
+.italic {
+  font-style: italic;
+}
+
+/* line 22, ../../sass/partials/helpers.scss */
+.bold {
+  font-weight: 600;
 }
 
 /* line 1, ../../sass/partials/parallax.scss */
@@ -592,29 +614,210 @@ nav ul li a:hover {
 
 /* line 4, ../../sass/partials/recruit.scss */
 #recruit {
-  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
 }
 /* line 9, ../../sass/partials/recruit.scss */
 #recruit h1 {
+  display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 2.75em;
-  color: #3a3a3a;
+  color: #5d5d5d;
   margin: 0;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
-/* line 22, ../../sass/partials/recruit.scss */
+/* line 23, ../../sass/partials/recruit.scss */
 #recruit h1 span.bold {
   font-weight: 400;
 }
-/* line 28, ../../sass/partials/recruit.scss */
+/* line 29, ../../sass/partials/recruit.scss */
 #recruit img {
   width: 165px;
   height: auto;
 }
+/* line 34, ../../sass/partials/recruit.scss */
+#recruit ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 90px;
+}
+/* line 40, ../../sass/partials/recruit.scss */
+#recruit ul li {
+  display: inline-block;
+  margin-right: 8em;
+}
+/* line 44, ../../sass/partials/recruit.scss */
+#recruit ul li:last-child {
+  margin-right: 0;
+}
+/* line 49, ../../sass/partials/recruit.scss */
+#recruit ul li ul {
+  margin: 0;
+}
+/* line 52, ../../sass/partials/recruit.scss */
+#recruit ul li ul li {
+  display: block;
+  margin: 0;
+  font-size: 3.75em;
+  font-weight: 300;
+  color: #8b96fc;
+}
+/* line 63, ../../sass/partials/recruit.scss */
+#recruit a {
+  display: inline-block;
+  background-color: #8b96fc;
+  color: #fff;
+  width: auto;
+  text-decoration: none;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  font-size: 2.25em;
+  padding: 1rem 2.5rem;
+}
+/* line 74, ../../sass/partials/recruit.scss */
+#recruit a:hover {
+  background-color: #abaa37;
+}
 
-/* line 13, ../../sass/partials/base.scss */
-body {
-  height: 3000px;
+/* line 5, ../../sass/partials/news.scss */
+#news {
+  background-color: #8b96fc;
+}
+/* line 8, ../../sass/partials/news.scss */
+#news h1 {
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+  padding-top: 1em;
+  font-size: 2.75em;
+}
+/* line 16, ../../sass/partials/news.scss */
+#news hr {
+  border: 0;
+  height: 1px;
+  background: #fff;
+}
+/* line 22, ../../sass/partials/news.scss */
+#news article {
+  color: #686868;
+  background-color: #fff;
+  padding: 0.625em;
+  margin-bottom: 1em;
+}
+/* line 2, ../../sass/partials/mixins.scss */
+#news article:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 29, ../../sass/partials/news.scss */
+#news article h2 {
+  margin: 0;
+  margin-bottom: 0.3em;
+  font-weight: 400;
+}
+/* line 36, ../../sass/partials/news.scss */
+#news article h3 {
+  font-size: 0.75em;
+  margin: 0;
+  text-transform: lowercase;
+}
+/* line 42, ../../sass/partials/news.scss */
+#news article hr {
+  margin-top: 1em;
+  margin-bottom: 0;
+  border: 0;
+  height: 1px;
+  background: #5d5d5d;
+  opacity: 0.2;
+}
+/* line 53, ../../sass/partials/news.scss */
+#news article .content {
+  box-sizing: border-box;
+  margin-top: 1em;
+}
+/* line 58, ../../sass/partials/news.scss */
+#news article .left {
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  padding-right: 2em;
+}
+/* line 65, ../../sass/partials/news.scss */
+#news article .left > img {
+  max-width: 100%;
+}
+/* line 71, ../../sass/partials/news.scss */
+#news article .right {
+  float: right;
+  width: 75%;
+}
+/* line 75, ../../sass/partials/news.scss */
+#news article .right p {
+  font-size: 0.875em;
+  text-align: justify;
+  line-height: 1.2em;
+  margin-top: 0;
+}
+/* line 83, ../../sass/partials/news.scss */
+#news article .right a {
+  text-decoration: none;
+  color: #8b96fc;
+  -moz-transition: color 1s;
+  -o-transition: color 1s;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+/* line 88, ../../sass/partials/news.scss */
+#news article .right a:hover {
+  color: #4a5081;
+}
+/* line 96, ../../sass/partials/news.scss */
+#news article .right a.continue:after {
+  font-size: 0.7em;
+  font-family: fontello;
+  content: "\00a0\e800\e800";
+}
+
+/* line 4, ../../sass/partials/footer.scss */
+footer {
+  padding: 0 0.625em;
+  height: 5rem;
+  font-size: 0.75em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 300;
+  background-color: #fff;
+}
+/* line 21, ../../sass/partials/footer.scss */
+footer .special {
+  font-weight: 600;
+  font-style: italic;
+  color: #8b96fc;
+}
+/* line 27, ../../sass/partials/footer.scss */
+footer ul {
+  display: block;
+  float: right;
+  width: auto;
+}
+/* line 33, ../../sass/partials/footer.scss */
+footer ul li {
+  display: inline-block;
+  margin-right: 2em;
+}
+/* line 37, ../../sass/partials/footer.scss */
+footer ul li:last-child {
+  margin-right: 0.625em;
+}
+/* line 42, ../../sass/partials/footer.scss */
+footer ul li img {
+  width: 48px;
+  height: auto;
 }

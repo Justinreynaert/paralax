@@ -4,6 +4,21 @@
 // Font Variables
 $open-sans: 'Open Sans', sans-serif;
 
+@font-face {
+  font-family: 'fontello';
+  src: url('fontello/fontello.eot?60295365');
+  src: url('fontello/fontello.eot?60295365#iefix') format('embedded-opentype'),
+  url('fontello/fontello.woff2?60295365') format('woff2'),
+  url('fontello/fontello.woff?60295365') format('woff'),
+  url('fontello/fontello.ttf?60295365') format('truetype'),
+  url('fontello/fontello.svg?60295365#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: $open-sans;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

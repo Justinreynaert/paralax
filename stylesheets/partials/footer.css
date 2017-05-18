@@ -1,0 +1,37 @@
+/* line 4, ../../sass/partials/footer.scss */
+footer {
+  padding: 0 0.625em;
+  height: 5rem;
+  font-size: 0.75em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 300;
+  background-color: #fff;
+}
+/* line 21, ../../sass/partials/footer.scss */
+footer .special {
+  font-weight: 600;
+  font-style: italic;
+  color: #8b96fc;
+}
+/* line 27, ../../sass/partials/footer.scss */
+footer ul {
+  display: block;
+  float: right;
+  width: auto;
+}
+/* line 33, ../../sass/partials/footer.scss */
+footer ul li {
+  display: inline-block;
+  margin-right: 2em;
+}
+/* line 37, ../../sass/partials/footer.scss */
+footer ul li:last-child {
+  margin-right: 0.625em;
+}
+/* line 42, ../../sass/partials/footer.scss */
+footer ul li img {
+  width: 48px;
+  height: auto;
+}
