@@ -1,9 +1,12 @@
 @import 'colors';
 @import 'mixins';
+@import 'variables';
 
 #recruit {
   text-align: center;
   background-color: $white;
+
+
 
 
   h1 {
@@ -32,14 +35,27 @@
   }
 
   ul {
+
     display: inline-block;
     margin: 0;
     padding: 0;
     margin-bottom: 90px;
 
+    @media screen and (max-width: $break-small) {
+      display: none;
+    }
+
+
+
     li {
       display: inline-block;
       margin-right: 8em;
+
+      @media screen and (max-width: $break-small) {
+        float: left;
+        margin: 0 auto;
+        clear: right;
+      }
 
       &:last-child {
         margin-right: 0;

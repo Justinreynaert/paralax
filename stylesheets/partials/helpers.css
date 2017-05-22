@@ -1,27 +1,28 @@
 /* line 1, ../../sass/partials/helpers.scss */
 .container {
   box-sizing: border-box;
-  width: 1024px;
+  max-width: 1024px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 0.625em 2.25em 0.625em;
 }
 
-/* line 10, ../../sass/partials/helpers.scss */
+/* line 12, ../../sass/partials/helpers.scss */
 .left {
   float: left;
 }
 
-/* line 14, ../../sass/partials/helpers.scss */
+/* line 16, ../../sass/partials/helpers.scss */
 .right {
   float: right;
 }
 
-/* line 18, ../../sass/partials/helpers.scss */
+/* line 20, ../../sass/partials/helpers.scss */
 .italic {
   font-style: italic;
 }
 
-/* line 22, ../../sass/partials/helpers.scss */
+/* line 24, ../../sass/partials/helpers.scss */
 .bold {
   font-weight: 600;
 }

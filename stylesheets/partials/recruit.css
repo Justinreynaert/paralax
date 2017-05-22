@@ -1,9 +1,9 @@
-/* line 4, ../../sass/partials/recruit.scss */
+/* line 5, ../../sass/partials/recruit.scss */
 #recruit {
   text-align: center;
   background-color: #fff;
 }
-/* line 9, ../../sass/partials/recruit.scss */
+/* line 12, ../../sass/partials/recruit.scss */
 #recruit h1 {
   display: inline-block;
   font-family: "Open Sans", sans-serif;
@@ -14,36 +14,50 @@
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-/* line 23, ../../sass/partials/recruit.scss */
+/* line 26, ../../sass/partials/recruit.scss */
 #recruit h1 span.bold {
   font-weight: 400;
 }
-/* line 29, ../../sass/partials/recruit.scss */
+/* line 32, ../../sass/partials/recruit.scss */
 #recruit img {
   width: 165px;
   height: auto;
 }
-/* line 34, ../../sass/partials/recruit.scss */
+/* line 37, ../../sass/partials/recruit.scss */
 #recruit ul {
   display: inline-block;
   margin: 0;
   padding: 0;
   margin-bottom: 90px;
 }
-/* line 40, ../../sass/partials/recruit.scss */
+@media screen and (max-width: 415px) {
+  /* line 37, ../../sass/partials/recruit.scss */
+  #recruit ul {
+    display: none;
+  }
+}
+/* line 50, ../../sass/partials/recruit.scss */
 #recruit ul li {
   display: inline-block;
   margin-right: 8em;
 }
-/* line 44, ../../sass/partials/recruit.scss */
+@media screen and (max-width: 415px) {
+  /* line 50, ../../sass/partials/recruit.scss */
+  #recruit ul li {
+    float: left;
+    margin: 0 auto;
+    clear: right;
+  }
+}
+/* line 60, ../../sass/partials/recruit.scss */
 #recruit ul li:last-child {
   margin-right: 0;
 }
-/* line 49, ../../sass/partials/recruit.scss */
+/* line 65, ../../sass/partials/recruit.scss */
 #recruit ul li ul {
   margin: 0;
 }
-/* line 52, ../../sass/partials/recruit.scss */
+/* line 68, ../../sass/partials/recruit.scss */
 #recruit ul li ul li {
   display: block;
   margin: 0;
@@ -51,7 +65,7 @@
   font-weight: 300;
   color: #8b96fc;
 }
-/* line 63, ../../sass/partials/recruit.scss */
+/* line 79, ../../sass/partials/recruit.scss */
 #recruit a {
   display: inline-block;
   background-color: #8b96fc;
@@ -65,7 +79,7 @@
   font-size: 2.25em;
   padding: 1rem 2.5rem;
 }
-/* line 74, ../../sass/partials/recruit.scss */
+/* line 90, ../../sass/partials/recruit.scss */
 #recruit a:hover {
   background-color: #abaa37;
 }

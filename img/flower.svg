@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="flower" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 494 883" enable-background="new 0 0 494 883" xml:space="preserve">
+<rect id="stem" x="224" y="258" fill="#6ABF66" width="45" height="625"/>
+<g id="petals">
+	<ellipse fill="#3EC6CC" cx="247" cy="94" rx="30" ry="85"/>
+	<ellipse transform="matrix(-0.901 0.4338 -0.4338 -0.901 382.121 133.27)" fill="#3EC6CC" cx="175.9" cy="110.2" rx="30" ry="85"/>
+	
+		<ellipse transform="matrix(-0.6236 0.7817 -0.7817 -0.6236 314.6152 159.9753)" fill="#3EC6CC" cx="118.8" cy="155.7" rx="30" ry="85"/>
+	
+		<ellipse transform="matrix(-0.2227 0.9749 -0.9749 -0.2227 322.432 185.8696)" fill="#3EC6CC" cx="87.1" cy="221.5" rx="30" ry="85"/>
+	<ellipse transform="matrix(0.2222 0.975 -0.975 0.2222 354.8274 144.0883)" fill="#3EC6CC" cx="87.1" cy="294.4" rx="30" ry="85"/>
+	
+		<ellipse transform="matrix(0.6232 0.7821 -0.7821 0.6232 326.4452 42.8625)" fill="#3EC6CC" cx="118.7" cy="360.2" rx="30" ry="85"/>
+	
+		<ellipse transform="matrix(0.9008 0.4343 -0.4343 0.9008 193.644 -36.0791)" fill="#3EC6CC" cx="175.8" cy="405.7" rx="30" ry="85"/>
+	
+		<ellipse transform="matrix(1 5.235989e-004 -5.235989e-004 1 0.221 -0.1292)" fill="#3EC6CC" cx="246.9" cy="422" rx="30" ry="85"/>
+	
+		<ellipse transform="matrix(0.9012 -0.4333 0.4333 0.9012 -144.4357 177.9149)" fill="#3EC6CC" cx="318.1" cy="405.8" rx="30" ry="85"/>
+	
+		<ellipse transform="matrix(0.624 -0.7814 0.7814 0.624 -140.5218 428.6293)" fill="#3EC6CC" cx="375.2" cy="360.3" rx="30" ry="85"/>
+	
+		<ellipse transform="matrix(0.2233 -0.9748 0.9748 0.2233 28.8518 625.4328)" fill="#3EC6CC" cx="406.9" cy="294.6" rx="30" ry="85"/>
+	
+		<ellipse transform="matrix(-0.2217 -0.9751 0.9751 -0.2217 281.0178 667.5697)" fill="#3EC6CC" cx="406.9" cy="221.6" rx="30" ry="85"/>
+	
+		<ellipse transform="matrix(-0.6228 -0.7824 0.7824 -0.6228 487.1062 546.573)" fill="#3EC6CC" cx="375.3" cy="155.9" rx="30" ry="85"/>
+	
+		<ellipse transform="matrix(-0.9005 -0.4348 0.4348 -0.9005 556.9866 348.0342)" fill="#3EC6CC" cx="318.3" cy="110.3" rx="30" ry="85"/>
+</g>
+<circle id="centre" fill="#C33ECE" cx="247" cy="258" r="89"/>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>

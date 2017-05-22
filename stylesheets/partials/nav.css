@@ -1,4 +1,4 @@
-/* line 4, ../../sass/partials/nav.scss */
+/* line 5, ../../sass/partials/nav.scss */
 nav {
   height: 3.4375em;
   background-color: #fff;
@@ -6,25 +6,38 @@ nav {
   flex-direction: column;
   justify-content: center;
 }
-/* line 11, ../../sass/partials/nav.scss */
+/* line 12, ../../sass/partials/nav.scss */
 nav .logo {
   width: 2.65em;
   margin-left: 0.625em;
 }
-/* line 16, ../../sass/partials/nav.scss */
+/* line 17, ../../sass/partials/nav.scss */
 nav ul {
   width: auto;
 }
-/* line 21, ../../sass/partials/nav.scss */
+@media screen and (max-width: 415px) {
+  /* line 17, ../../sass/partials/nav.scss */
+  nav ul {
+    padding: 0;
+  }
+}
+/* line 27, ../../sass/partials/nav.scss */
 nav ul li {
   display: inline-block;
   margin-right: 2em;
 }
-/* line 25, ../../sass/partials/nav.scss */
+@media screen and (max-width: 415px) {
+  /* line 27, ../../sass/partials/nav.scss */
+  nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+}
+/* line 36, ../../sass/partials/nav.scss */
 nav ul li:last-child {
   margin-right: 0.625em;
 }
-/* line 29, ../../sass/partials/nav.scss */
+/* line 40, ../../sass/partials/nav.scss */
 nav ul li a {
   text-decoration: none;
   color: #8b96fc;
@@ -34,17 +47,17 @@ nav ul li a {
   -webkit-transition: color 1s;
   transition: color 1s;
 }
-/* line 36, ../../sass/partials/nav.scss */
+/* line 47, ../../sass/partials/nav.scss */
 nav ul li a.active {
   color: #6168b0;
   border-bottom: 1px solid #6168b0;
   padding-bottom: 2px;
 }
-/* line 41, ../../sass/partials/nav.scss */
+/* line 52, ../../sass/partials/nav.scss */
 nav ul li a.active:hover {
   border-bottom: none;
 }
-/* line 46, ../../sass/partials/nav.scss */
+/* line 57, ../../sass/partials/nav.scss */
 nav ul li a:hover {
   color: #abaa37;
 }

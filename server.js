@@ -15,6 +15,10 @@ app.get('/component', (req, res) => {
     res.sendFile(path.join(__dirname, 'component.html'));
 });
 
+app.get('/svg', (req, res) => {
+    res.sendFile(path.join(__dirname, 'svg.html'))
+});
+
 app.get('*', (req,res) => {
     res.sendFile(path.join(__dirname, 'template.html'));
 });

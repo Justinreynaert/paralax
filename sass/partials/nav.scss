@@ -1,5 +1,6 @@
 @import 'colors';
 @import 'mixins';
+@import 'variables.scss';
 
 nav {
   height: 3.4375em; // 55px
@@ -18,9 +19,19 @@ nav {
 
     width: auto;
 
+    @media screen and (max-width: $break-small) {
+      padding: 0;
+    }
+
+
     li {
       display: inline-block;
       margin-right: 2em;
+
+      @media screen and (max-width: $break-small) {
+        margin: 0;
+        padding: 0;
+      }
 
       &:last-child {
         margin-right: 0.625em;
