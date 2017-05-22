@@ -491,7 +491,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 1, ../sass/partials/helpers.scss */
+/* line 3, ../sass/partials/helpers.scss */
 .container {
   box-sizing: border-box;
   max-width: 1024px;
@@ -500,24 +500,34 @@ body {
   padding: 0 0.625em 2.25em 0.625em;
 }
 
-/* line 12, ../sass/partials/helpers.scss */
+/* line 14, ../sass/partials/helpers.scss */
 .left {
   float: left;
 }
 
-/* line 16, ../sass/partials/helpers.scss */
+/* line 18, ../sass/partials/helpers.scss */
 .right {
   float: right;
 }
 
-/* line 20, ../sass/partials/helpers.scss */
+/* line 22, ../sass/partials/helpers.scss */
 .italic {
   font-style: italic;
 }
 
-/* line 24, ../sass/partials/helpers.scss */
+/* line 26, ../sass/partials/helpers.scss */
 .bold {
   font-weight: 600;
+}
+
+/* line 30, ../sass/partials/helpers.scss */
+.dark {
+  background: #4a5081;
+}
+
+/* line 34, ../sass/partials/helpers.scss */
+.light {
+  background: #8b96fc;
 }
 
 /* line 1, ../sass/partials/parallax.scss */
@@ -577,17 +587,17 @@ nav ul li a {
   -webkit-transition: color 1s;
   transition: color 1s;
 }
-/* line 47, ../sass/partials/nav.scss */
+/* line 49, ../sass/partials/nav.scss */
 nav ul li a.active {
   color: #6168b0;
   border-bottom: 1px solid #6168b0;
   padding-bottom: 2px;
 }
-/* line 52, ../sass/partials/nav.scss */
+/* line 54, ../sass/partials/nav.scss */
 nav ul li a.active:hover {
   border-bottom: none;
 }
-/* line 57, ../sass/partials/nav.scss */
+/* line 59, ../sass/partials/nav.scss */
 nav ul li a:hover {
   color: #abaa37;
 }
@@ -626,97 +636,11 @@ nav ul li a:hover {
   margin: 0 auto;
 }
 
-/* line 5, ../sass/partials/recruit.scss */
-#recruit {
-  text-align: center;
-  background-color: #fff;
-}
-/* line 12, ../sass/partials/recruit.scss */
-#recruit h1 {
-  display: inline-block;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  font-size: 2.75em;
-  color: #5d5d5d;
-  margin: 0;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-}
-/* line 26, ../sass/partials/recruit.scss */
-#recruit h1 span.bold {
-  font-weight: 400;
-}
-/* line 32, ../sass/partials/recruit.scss */
-#recruit img {
-  width: 165px;
-  height: auto;
-}
-/* line 37, ../sass/partials/recruit.scss */
-#recruit ul {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 90px;
-}
-@media screen and (max-width: 415px) {
-  /* line 37, ../sass/partials/recruit.scss */
-  #recruit ul {
-    display: none;
-  }
-}
-/* line 50, ../sass/partials/recruit.scss */
-#recruit ul li {
-  display: inline-block;
-  margin-right: 8em;
-}
-@media screen and (max-width: 415px) {
-  /* line 50, ../sass/partials/recruit.scss */
-  #recruit ul li {
-    float: left;
-    margin: 0 auto;
-    clear: right;
-  }
-}
-/* line 60, ../sass/partials/recruit.scss */
-#recruit ul li:last-child {
-  margin-right: 0;
-}
-/* line 65, ../sass/partials/recruit.scss */
-#recruit ul li ul {
-  margin: 0;
-}
-/* line 68, ../sass/partials/recruit.scss */
-#recruit ul li ul li {
-  display: block;
-  margin: 0;
-  font-size: 3.75em;
-  font-weight: 300;
-  color: #8b96fc;
-}
-/* line 79, ../sass/partials/recruit.scss */
-#recruit a {
-  display: inline-block;
-  background-color: #8b96fc;
-  color: #fff;
-  width: auto;
-  text-decoration: none;
-  -moz-transition: background-color 0.5s;
-  -o-transition: background-color 0.5s;
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
-  font-size: 2.25em;
-  padding: 1rem 2.5rem;
-}
-/* line 90, ../sass/partials/recruit.scss */
-#recruit a:hover {
-  background-color: #abaa37;
-}
-
-/* line 6, ../sass/partials/news.scss */
+/* line 6, ../sass/partials/home.scss */
 #news {
   background-color: #8b96fc;
 }
-/* line 9, ../sass/partials/news.scss */
+/* line 9, ../sass/partials/home.scss */
 #news h1 {
   margin: 0;
   color: #fff;
@@ -724,13 +648,13 @@ nav ul li a:hover {
   padding-top: 1em;
   font-size: 2.75em;
 }
-/* line 17, ../sass/partials/news.scss */
+/* line 17, ../sass/partials/home.scss */
 #news hr {
   border: 0;
   height: 1px;
   background: #fff;
 }
-/* line 23, ../sass/partials/news.scss */
+/* line 23, ../sass/partials/home.scss */
 #news article {
   box-sizing: border-box;
   width: 100%;
@@ -745,19 +669,19 @@ nav ul li a:hover {
   display: table;
   clear: both;
 }
-/* line 32, ../sass/partials/news.scss */
+/* line 32, ../sass/partials/home.scss */
 #news article h2 {
   margin: 0;
   margin-bottom: 0.3em;
   font-weight: 400;
 }
-/* line 39, ../sass/partials/news.scss */
+/* line 39, ../sass/partials/home.scss */
 #news article h3 {
   font-size: 0.75em;
   margin: 0;
   text-transform: lowercase;
 }
-/* line 45, ../sass/partials/news.scss */
+/* line 45, ../sass/partials/home.scss */
 #news article hr {
   margin-top: 1em;
   margin-bottom: 0;
@@ -766,12 +690,12 @@ nav ul li a:hover {
   background: #5d5d5d;
   opacity: 0.2;
 }
-/* line 56, ../sass/partials/news.scss */
+/* line 56, ../sass/partials/home.scss */
 #news article .content {
   box-sizing: border-box;
   margin-top: 1em;
 }
-/* line 61, ../sass/partials/news.scss */
+/* line 61, ../sass/partials/home.scss */
 #news article .left {
   box-sizing: border-box;
   display: inline-block;
@@ -779,7 +703,7 @@ nav ul li a:hover {
   padding-right: 2em;
 }
 @media screen and (max-width: 415px) {
-  /* line 61, ../sass/partials/news.scss */
+  /* line 61, ../sass/partials/home.scss */
   #news article .left {
     width: 100%;
     margin: 0 auto;
@@ -787,29 +711,29 @@ nav ul li a:hover {
     margin-bottom: 1em;
   }
 }
-/* line 75, ../sass/partials/news.scss */
+/* line 75, ../sass/partials/home.scss */
 #news article .left > img {
   max-width: 100%;
 }
 @media screen and (max-width: 415px) {
-  /* line 75, ../sass/partials/news.scss */
+  /* line 75, ../sass/partials/home.scss */
   #news article .left > img {
     display: block;
     margin: 0 auto;
   }
 }
-/* line 87, ../sass/partials/news.scss */
+/* line 87, ../sass/partials/home.scss */
 #news article .right {
   float: right;
   width: 75%;
 }
 @media screen and (max-width: 415px) {
-  /* line 87, ../sass/partials/news.scss */
+  /* line 87, ../sass/partials/home.scss */
   #news article .right {
     width: 100%;
   }
 }
-/* line 96, ../sass/partials/news.scss */
+/* line 96, ../sass/partials/home.scss */
 #news article .right p {
   font-size: 0.875em;
   text-align: justify;
@@ -817,14 +741,14 @@ nav ul li a:hover {
   margin-top: 0;
 }
 @media screen and (max-width: 415px) {
-  /* line 96, ../sass/partials/news.scss */
+  /* line 96, ../sass/partials/home.scss */
   #news article .right p {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
   }
 }
-/* line 110, ../sass/partials/news.scss */
+/* line 110, ../sass/partials/home.scss */
 #news article .right a {
   text-decoration: none;
   color: #8b96fc;
@@ -833,15 +757,191 @@ nav ul li a:hover {
   -webkit-transition: color 1s;
   transition: color 1s;
 }
-/* line 115, ../sass/partials/news.scss */
+/* line 115, ../sass/partials/home.scss */
 #news article .right a:hover {
   color: #4a5081;
 }
-/* line 123, ../sass/partials/news.scss */
+/* line 123, ../sass/partials/home.scss */
 #news article .right a.continue:after {
   font-size: 0.7em;
   font-family: fontello;
   content: "\00a0\e800\e800";
+}
+
+/* line 139, ../sass/partials/home.scss */
+#recruit {
+  text-align: center;
+  background-color: #fff;
+}
+/* line 146, ../sass/partials/home.scss */
+#recruit h1 {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2.75em;
+  color: #5d5d5d;
+  margin: 0;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+/* line 160, ../sass/partials/home.scss */
+#recruit h1 span.bold {
+  font-weight: 400;
+}
+/* line 166, ../sass/partials/home.scss */
+#recruit img {
+  width: 165px;
+  height: auto;
+}
+/* line 171, ../sass/partials/home.scss */
+#recruit ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 90px;
+}
+@media screen and (max-width: 415px) {
+  /* line 171, ../sass/partials/home.scss */
+  #recruit ul {
+    display: none;
+  }
+}
+/* line 184, ../sass/partials/home.scss */
+#recruit ul li {
+  display: inline-block;
+  margin-right: 8em;
+}
+@media screen and (max-width: 415px) {
+  /* line 184, ../sass/partials/home.scss */
+  #recruit ul li {
+    float: left;
+    margin: 0 auto;
+    clear: right;
+  }
+}
+/* line 194, ../sass/partials/home.scss */
+#recruit ul li:last-child {
+  margin-right: 0;
+}
+/* line 199, ../sass/partials/home.scss */
+#recruit ul li ul {
+  margin: 0;
+}
+/* line 202, ../sass/partials/home.scss */
+#recruit ul li ul li {
+  display: block;
+  margin: 0;
+  font-size: 3.75em;
+  font-weight: 300;
+  color: #8b96fc;
+}
+/* line 213, ../sass/partials/home.scss */
+#recruit a {
+  display: inline-block;
+  background-color: #8b96fc;
+  color: #fff;
+  width: auto;
+  text-decoration: none;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  font-size: 2.25em;
+  padding: 1rem 2.5rem;
+}
+@media screen and (max-width: 415px) {
+  /* line 213, ../sass/partials/home.scss */
+  #recruit a {
+    font-size: 1em;
+    padding: 1rem;
+  }
+}
+/* line 229, ../sass/partials/home.scss */
+#recruit a:hover {
+  background-color: #abaa37;
+}
+
+/* line 5, ../sass/partials/recruitment.scss */
+#recruitment {
+  font-size: 1.2rem;
+}
+/* line 8, ../sass/partials/recruitment.scss */
+#recruitment h1 {
+  display: inline-block;
+  font-size: 4.5rem;
+  color: #4a5081;
+  margin: 0;
+  margin-top: 1rem;
+}
+/* line 16, ../sass/partials/recruitment.scss */
+#recruitment p {
+  text-align: justify;
+  line-height: 1.5rem;
+}
+/* line 21, ../sass/partials/recruitment.scss */
+#recruitment li {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+/* line 26, ../sass/partials/recruitment.scss */
+#recruitment ul {
+  padding-left: 0;
+}
+/* line 28, ../sass/partials/recruitment.scss */
+#recruitment ul li {
+  list-style: none;
+}
+/* line 31, ../sass/partials/recruitment.scss */
+#recruitment ul li:before {
+  content: '';
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  background-image: url("../img/sword.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+/* line 47, ../sass/partials/recruitment.scss */
+#recruitment .highlight {
+  color: #abaa37;
+}
+/* line 53, ../sass/partials/recruitment.scss */
+#recruitment .light h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+/* line 58, ../sass/partials/recruitment.scss */
+#recruitment .light .highlight {
+  color: #fff;
+}
+/* line 69, ../sass/partials/recruitment.scss */
+#recruitment a.bigredsillybutton {
+  display: block;
+  background-color: red;
+  color: #fff;
+  width: auto;
+  text-decoration: none;
+  text-align: center;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  margin-top: 4em;
+}
+@media screen and (max-width: 415px) {
+  /* line 69, ../sass/partials/recruitment.scss */
+  #recruitment a.bigredsillybutton {
+    font-size: 1em;
+    padding: 1rem;
+  }
+}
+/* line 89, ../sass/partials/recruitment.scss */
+#recruitment a.bigredsillybutton:hover {
+  background-color: #c01d1d;
 }
 
 /* line 4, ../sass/partials/footer.scss */

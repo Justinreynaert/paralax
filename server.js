@@ -11,12 +11,8 @@ app.use(cors());
 
 app.use(express.static(path.join(__dirname)));
 
-app.get('/component', (req, res) => {
-    res.sendFile(path.join(__dirname, 'component.html'));
-});
-
-app.get('/svg', (req, res) => {
-    res.sendFile(path.join(__dirname, 'svg.html'))
+app.get('/recruitment', (req, res) => {
+    res.sendFile(path.join(__dirname, 'recruitment.html'))
 });
 
 app.get('*', (req,res) => {

@@ -44,6 +44,8 @@ nav {
         @include transition(color 1s);
 
 
+
+
         &.active {
           color: $med;
           border-bottom: 1px solid $med;
