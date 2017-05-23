@@ -9,7 +9,7 @@ const User = require('../models/user');
 
 
 //register
-/*router.post('/register', (req, res, next) => {
+router.post('/register', (req, res, next) => {
 
 
 
@@ -33,7 +33,7 @@ const User = require('../models/user');
     //res.send('REGISTER');
 
 
-});*/
+});
 
 //authentice
 router.post('/authenticate', (req, res, next) => {
