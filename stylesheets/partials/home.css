@@ -1,21 +1,17 @@
 /*
-Error: Undefined variable: "$dark".
-        on line 29 of C:/Users/cyber07/Documents/sites/essence/sass/partials/helpers.scss
+Error: Undefined variable: "$light".
+        on line 2 of C:/Users/cyber07/Documents/sites/essence/sass/partials/home.scss
 
-24: .bold {
-25:   font-weight: 600;
-26: }
-27: 
-28: .dark {
-29:   background: $dark;
-30: }
-31: 
-32: .light {
-33:   background: $light;
-34: }
+1: #news {
+2:   background-color: $light;
+3: 
+4:   h1 {
+5:     margin: 0;
+6:     color: $white;
+7:     font-weight: 600;
 
 Backtrace:
-C:/Users/cyber07/Documents/sites/essence/sass/partials/helpers.scss:29
+C:/Users/cyber07/Documents/sites/essence/sass/partials/home.scss:2
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -72,4 +68,4 @@ C:/Ruby23-x64/bin/compass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$dark\".\A         on line 29 of C:/Users/cyber07/Documents/sites/essence/sass/partials/helpers.scss\A \A 24: .bold {\A 25:   font-weight: 600;\A 26: }\A 27: \A 28: .dark {\A 29:   background: $dark;\A 30: }\A 31: \A 32: .light {\A 33:   background: $light;\A 34: }"; }
+  content: "Error: Undefined variable: \"$light\".\A         on line 2 of C:/Users/cyber07/Documents/sites/essence/sass/partials/home.scss\A \A 1: #news {\A 2:   background-color: $light;\A 3: \A 4:   h1 {\A 5:     margin: 0;\A 6:     color: $white;\A 7:     font-weight: 600;"; }

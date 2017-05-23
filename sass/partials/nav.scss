@@ -1,13 +1,28 @@
-@import 'colors';
-@import 'mixins';
-@import 'variables.scss';
+#navWrap {
+ height: 3.4375em;
+}
 
 nav {
-  height: 3.4375em; // 55px
+  height: 3.4375em;
   background-color: $white;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-bottom: 1px solid grey;
+
+  -webkit-box-shadow: 14px -200px 10px 200px rgba(0,0,0,0.8);
+  -moz-box-shadow: 14px -200px 10px 200px rgba(0,0,0,0.8);
+  box-shadow: 14px -200px 10px 200px rgba(0,0,0,0.8);
+
+  &.Navfixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+
+  }
+
 
   .logo {
     width: 2.65em;

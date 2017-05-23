@@ -6,34 +6,38 @@
     <title>Template</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 
+    <script src="js/fixedNav.js"></script>
+
 </head>
 <body>
     <header>
-        <nav>
-            <div>
-                <div class="logo left">
-                    <img src="img/logo.svg">
+        <div id="navWrap">
+            <nav id="nav">
+                <div>
+                    <div class="logo left">
+                        <img src="img/logo.svg">
+                    </div>
+
+                    <ul class="right">
+                        <li>
+                            <a href="/" class="active">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#">forum</a>
+                        </li>
+
+                        <li>
+                            <a href="#">videos</a>
+                        </li>
+
+                        <li>
+                            <a href="/recruitment">apply</a>
+                        </li>
+                    </ul>
                 </div>
-
-                <ul class="right">
-                    <li>
-                        <a href="/" class="active">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="#">forum</a>
-                    </li>
-
-                    <li>
-                        <a href="#">videos</a>
-                    </li>
-
-                    <li>
-                        <a href="/recruitment">apply</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
 
         <div id="hero">
             <div class="parallax">
