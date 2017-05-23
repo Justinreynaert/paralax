@@ -4,6 +4,9 @@
 /dist
 /tmp
 
+#db options
+/config
+
 # dependencies
 /node_modules
 
