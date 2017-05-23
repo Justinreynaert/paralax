@@ -1,9 +1,21 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
+  "name": "esssite",
+  "version": "1.0.0",
+  "description": "esssite",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
-    "express": "*",
-    "body-parser": "latest",
-    "cors": "latest"
-  }
+    "express":"*",
+    "mongoose":"*",
+    "bcryptjs":"*",
+    "cors":"*",
+    "jsonwebtoken":"*",
+    "body-parser":"*",
+    "passport":"*",
+    "passport-jwt":"*"
+  },
+  "author": "Justin Reynaert",
+  "license": "ISC"
 }
