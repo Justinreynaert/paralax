@@ -20,6 +20,7 @@ router.post('/register', (req, res, next) => {
         password: req.body.password
     });
 
+    console.log(newUser);
 
     User.addUser(newUser, (err, user) => {
         if(err){
@@ -30,7 +31,6 @@ router.post('/register', (req, res, next) => {
             res.json({success:true, msg:'success to register user'});
         }
     });
-    //res.send('REGISTER');
 
 
 });

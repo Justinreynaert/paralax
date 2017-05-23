@@ -18,9 +18,11 @@
 
         <li *ngIf="!authService.loggedIn()"><a [routerLinkActive]="['active']" [routerLink]="['/login']">Login</a></li>
 
+        <li *ngIf="authService.loggedIn()"><a [routerLinkActive]="['active']" [routerLink]="['/dashboard']">Dashboard</a></li>
+        <li><a *ngIf="authService.loggedIn()" href="#" (click)="onLogoutClick()">Logout</a></li>
 
 
-        <li><a href="#" (click)="onLogoutClick()">Logout</a></li>
+
       </ul>
     </div><!--/.nav-collapse -->
   </div>

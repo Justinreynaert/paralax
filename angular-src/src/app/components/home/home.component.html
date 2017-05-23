@@ -2,6 +2,8 @@
   <h1>Ess Dash</h1>
   <p class="lead">Welcome to blablabla</p>
   <div>
-    <a class="btn btn-primary" [routerLink]="['/login']">Login</a>
+    <a *ngIf="!authService.loggedIn()" class="btn btn-primary" [routerLink]="['/login']">Login</a>
+    <a *ngIf="authService.loggedIn()" (click)="onLogoutClick()" class="btn btn-primary" [routerLink]="['/logout']">Logout</a>
+
   </div>
 </div>

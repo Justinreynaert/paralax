@@ -1,0 +1,13 @@
+<h2 class="page-header">News article</h2>
+<form (submit)="onNewsSubmit()">
+  <div class="form-group">
+    <label for="name">Title</label>
+    <input id="title" [(ngModel)]="title"  name="title" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="username">Content</label>
+    <textarea id="username" [(ngModel)]="content"  name="content" type="text" class="form-control"></textarea>
+  </div>
+  <input type="submit" class="btn btn-primary" value="Submit">
+
+</form>

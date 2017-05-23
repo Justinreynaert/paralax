@@ -31,12 +31,12 @@ export class RegisterComponent implements OnInit {
   }
 
   onRegisterSubmit() {
-    const user = {
-      name: this.name,
-      username: this.username,
-      email: this.email,
-      password: this.password
-    };
+      const user = {
+        name: this.name,
+        username: this.username,
+        email: this.email,
+        password: this.password
+      };
 
     // required fields
     if(!this.validateService.validateRegister(user)){
