@@ -1,16 +1,23 @@
 #recruitment {
   font-size: 1.2rem;
+  color: $dark;
 
   h1 {
     display: inline-block;
     font-size: 4.5rem;
-    color: $dark;
     margin: 0;
     margin-top: 1rem;
+    margin-bottom: 2rem;
 
     @media screen and (max-width: $break-small) {
       font-size: 3rem;
     }
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    margin-bottom: 1em;
+    margin-top: 0;
   }
 
   p {
@@ -24,21 +31,11 @@
   }
 
   ul {
+    margin-top: 0;
     padding-left: 0;
     li {
       list-style: none;
-
-    &:before {
-      content:'';
-      display:inline-block;
-      height:2rem;
-      width:2rem;
-      background-image:url('../img/sword.svg');
-      background-size:contain;
-      background-repeat:no-repeat;
-      color: $white;
-    }
-
+      margin-bottom: 0;
     }
 
   }
@@ -56,6 +53,27 @@
 
     .highlight {
       color: $white;
+    }
+
+    ul {
+      padding-left: 0;
+      li {
+        margin-bottom: 1em;
+
+
+        &:before {
+          content: '';
+          display: inline-block;
+          height: 2rem;
+          width: 2rem;
+          background-image: url('../img/sword.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          color: $white;
+        }
+
+      }
+
     }
 
 

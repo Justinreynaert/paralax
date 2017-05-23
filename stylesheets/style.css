@@ -881,41 +881,70 @@ nav ul li a:hover {
 /* line 1, ../sass/partials/recruitment.scss */
 #recruitment {
   font-size: 1.2rem;
+  color: #4a5081;
 }
-/* line 4, ../sass/partials/recruitment.scss */
+/* line 5, ../sass/partials/recruitment.scss */
 #recruitment h1 {
   display: inline-block;
   font-size: 4.5rem;
-  color: #4a5081;
   margin: 0;
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 @media screen and (max-width: 415px) {
-  /* line 4, ../sass/partials/recruitment.scss */
+  /* line 5, ../sass/partials/recruitment.scss */
   #recruitment h1 {
     font-size: 3rem;
   }
 }
-/* line 16, ../sass/partials/recruitment.scss */
+/* line 17, ../sass/partials/recruitment.scss */
+#recruitment h3 {
+  font-size: 1.125rem;
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+/* line 23, ../sass/partials/recruitment.scss */
 #recruitment p {
   text-align: justify;
   line-height: 1.5rem;
 }
-/* line 21, ../sass/partials/recruitment.scss */
+/* line 28, ../sass/partials/recruitment.scss */
 #recruitment li {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
-/* line 26, ../sass/partials/recruitment.scss */
+/* line 33, ../sass/partials/recruitment.scss */
 #recruitment ul {
+  margin-top: 0;
   padding-left: 0;
 }
-/* line 28, ../sass/partials/recruitment.scss */
+/* line 36, ../sass/partials/recruitment.scss */
 #recruitment ul li {
   list-style: none;
+  margin-bottom: 0;
 }
-/* line 31, ../sass/partials/recruitment.scss */
-#recruitment ul li:before {
+/* line 44, ../sass/partials/recruitment.scss */
+#recruitment .highlight {
+  color: #abaa37;
+}
+/* line 50, ../sass/partials/recruitment.scss */
+#recruitment .light h1 {
+  color: #fff;
+}
+/* line 54, ../sass/partials/recruitment.scss */
+#recruitment .light .highlight {
+  color: #fff;
+}
+/* line 58, ../sass/partials/recruitment.scss */
+#recruitment .light ul {
+  padding-left: 0;
+}
+/* line 60, ../sass/partials/recruitment.scss */
+#recruitment .light ul li {
+  margin-bottom: 1em;
+}
+/* line 64, ../sass/partials/recruitment.scss */
+#recruitment .light ul li:before {
   content: '';
   display: inline-block;
   height: 2rem;
@@ -925,19 +954,7 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   color: #fff;
 }
-/* line 47, ../sass/partials/recruitment.scss */
-#recruitment .highlight {
-  color: #abaa37;
-}
-/* line 53, ../sass/partials/recruitment.scss */
-#recruitment .light h1 {
-  color: #fff;
-}
-/* line 57, ../sass/partials/recruitment.scss */
-#recruitment .light .highlight {
-  color: #fff;
-}
-/* line 68, ../sass/partials/recruitment.scss */
+/* line 86, ../sass/partials/recruitment.scss */
 #recruitment a.bigredsillybutton {
   display: block;
   background-color: red;
@@ -955,13 +972,13 @@ nav ul li a:hover {
   margin-top: 4em;
 }
 @media screen and (max-width: 415px) {
-  /* line 68, ../sass/partials/recruitment.scss */
+  /* line 86, ../sass/partials/recruitment.scss */
   #recruitment a.bigredsillybutton {
     font-size: 1em;
     padding: 1rem;
   }
 }
-/* line 88, ../sass/partials/recruitment.scss */
+/* line 106, ../sass/partials/recruitment.scss */
 #recruitment a.bigredsillybutton:hover {
   background-color: #c01d1d;
 }
