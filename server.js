@@ -59,4 +59,6 @@ app.get('/', (req, res) => {
     res.send('invalid endpoint')
 });
 
-app.listen(process.env.PORT || port);
+app.listen(process.env.PORT || port, () => {
+    console.log('server started on port' + port)
+});
