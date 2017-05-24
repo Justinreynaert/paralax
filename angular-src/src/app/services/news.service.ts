@@ -13,28 +13,28 @@ export class NewsService {
   addNews(news) {
     let headers = new Headers();
     headers.append('Content-Type','application/json');
-      return this.http.post('/news/addArticle', news, {headers: headers})
+      return this.http.post('http://localhost:4500/news/addArticle', news, {headers: headers})
           .map(res => res.json)
   }
 
   getThreeArticles() {
     let headers = new Headers();
     headers.append('Content-Type','application/json');
-    return this.http.get('/news/articles/three', {headers: headers})
+    return this.http.get('http://localhost:4500/news/articles/three', {headers: headers})
         .map(res => res.json())
   }
 
   getAllArticles() {
     let headers = new Headers();
     headers.append('Content-Type','application/json');
-    return this.http.get('/news/articles/all', {headers: headers})
+    return this.http.get('http://localhost:4500/news/articles/all', {headers: headers})
         .map(res => res.json())
   }
 
   deleteArticle(id) {
     let headers = new Headers();
     headers.append('Content-Type','application/json');
-    return this.http.delete('/news/articles/' + id, {headers: headers})
+    return this.http.delete('http://localhost:4500/news/articles/' + id, {headers: headers})
         .map(res => res.json())
   }
 
