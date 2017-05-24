@@ -11,10 +11,24 @@ export class NewsService {
   constructor(private http:Http) { }
 
   addNews(news) {
-    /*let headers = new Headers();
+    let headers = new Headers();
     headers.append('Content-Type','application/json');
       return this.http.post('http://localhost:4500/news/addArticle', news, {headers: headers})
-          .map(res => res.json)*/
+          .map(res => res.json)
+  }
+
+  getThreeArticles() {
+    let headers = new Headers();
+    headers.append('Content-Type','application/json');
+    return this.http.get('http://localhost:4500/news/articles/three', {headers: headers})
+        .map(res => res.json())
+  }
+
+  getAllArticles() {
+    let headers = new Headers();
+    headers.append('Content-Type','application/json');
+    return this.http.get('http://localhost:4500/news/articles/all', {headers: headers})
+        .map(res => res.json())
   }
 
 

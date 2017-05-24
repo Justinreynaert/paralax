@@ -23,11 +23,12 @@ const app = express();
 const users = require('./routes/users');
 const news = require('./routes/news');
 
+
 const port = 4500;
 
 app.use(cors());
 
-app.use(express.static(path.join(__dirname)));
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -40,12 +41,17 @@ app.use(passport.initialize());
 app.use(passport.session());
 require('./config/passport')(passport);
 
+app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 // routes
 app.use('/users', users);
 app.use('/news', news);
 
+app.get('/login', (req,res) => {
+    res.sendFile(path.join(__dirname, 'public/index.html'));
+});
 
 app.get('/videos', (req, res) => {
     res.sendFile(path.join(__dirname, 'videos.html'))
@@ -56,12 +62,14 @@ app.get('/recruitment', (req, res) => {
 });
 
 app.get('*', (req,res) => {
-    res.sendFile(path.join(__dirname, 'template.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/', (req, res) => {
-    res.send('invalid endpoint')
-});
+
+
+
+
+
 
 app.listen(process.env.PORT || port, () => {
     console.log('server started on port' + port)

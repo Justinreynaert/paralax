@@ -34,4 +34,14 @@ router.post('/addArticle', /*passport.authenticate('jwt', {session:false}),*/ (r
 
 });
 
+router.get('/articles/three', (req, res, next) => {
+
+    News.getThree(res);
+
+});
+
+router.get('/articles/all', (req,res,next) => {
+    News.getAllArticles(res);
+});
+
 module.exports = router;
