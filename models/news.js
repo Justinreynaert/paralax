@@ -52,3 +52,7 @@ module.exports.getThree = (res) => {
     }).sort({'date': -1}).limit(3);
 
 };
+
+module.exports.removeArticle = (id, callback) => {
+    News.findByIdAndRemove(id, callback);
+};

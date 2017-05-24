@@ -1,0 +1,19 @@
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th style="width: 20px;">Content</th>
+        <th>Timestamp</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let article of articles">
+        <td>{{article.title}}</td>
+        <td >{{article.content}}</td>
+        <td>{{article.date}}</td>
+        <td><button style="text-align: right" class="btn" (click)="destroyArticle(article)">x</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

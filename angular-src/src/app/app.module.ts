@@ -21,6 +21,7 @@ import { NewsService } from './services/news.service';
 
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { AuthGuard } from './guards/auth.guard';
+import { ShownewsComponent } from './components/shownews/shownews.component';
 
 
 
@@ -46,6 +47,7 @@ const appRoutes: Routes = [
     DashboardComponent,
     ProfileComponent,
     NewsComponent,
+    ShownewsComponent,
      ],
   imports: [
     BrowserModule,

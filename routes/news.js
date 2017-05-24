@@ -44,4 +44,20 @@ router.get('/articles/all', (req,res,next) => {
     News.getAllArticles(res);
 });
 
+router.delete('/articles/:id', (req,res) => {
+
+    let id = req.params.id;
+
+    News.removeArticle(id, (err)=> {
+        if (!err) {
+            res.json({removed: true})
+        } else {
+            res.json({removed: false})
+        }
+    })
+
+});
+
+
+
 module.exports = router;
