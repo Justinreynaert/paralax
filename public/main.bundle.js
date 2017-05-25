@@ -86,7 +86,7 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_validate_service__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_auth_service__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_news_service__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_angular2_flash_messages__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_angular2_flash_messages__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_angular2_flash_messages__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__guards_auth_guard__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_shownews_shownews_component__ = __webpack_require__(159);
@@ -149,7 +149,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */].forRoot(appRoutes),
             __WEBPACK_IMPORTED_MODULE_16_angular2_flash_messages__["FlashMessagesModule"]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_13__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_14__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_17__guards_auth_guard__["a" /* AuthGuard */], __WEBPACK_IMPORTED_MODULE_15__services_news_service__["a" /* NewsService */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_13__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_14__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_17__guards_auth_guard__["a" /* AuthGuard */], __WEBPACK_IMPORTED_MODULE_15__services_news_service__["a" /* NewsService */], __WEBPACK_IMPORTED_MODULE_18__components_shownews_shownews_component__["a" /* ShownewsComponent */]],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
@@ -201,7 +201,7 @@ DashboardComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -254,7 +254,7 @@ var _a, _b, _c;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -325,7 +325,7 @@ var _a, _b, _c;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavbarComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -378,7 +378,7 @@ var _a, _b, _c;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_news_service__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(21);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsComponent; });
@@ -415,7 +415,7 @@ var NewsComponent = (function () {
             if (data) {
                 _this.flashMessage.show('Article made', { cssClass: 'alert-success', timeout: 3000 });
                 // Forced reload - need sexier solution!
-                location.reload();
+                //        location.reload();
             }
             else {
                 _this.flashMessage.show('Something went wrong', { cssClass: 'alert-danger', timeout: 3000 });
@@ -495,7 +495,7 @@ var _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_validate_service__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_auth_service__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(21);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterComponent; });
@@ -577,6 +577,8 @@ var _a, _b, _c, _d;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_news_service__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShownewsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -590,8 +592,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var ShownewsComponent = (function () {
-    function ShownewsComponent(newsService, router) {
+    function ShownewsComponent(flashMessage, newsService, router) {
+        this.flashMessage = flashMessage;
         this.newsService = newsService;
         this.router = router;
     }
@@ -602,6 +606,29 @@ var ShownewsComponent = (function () {
         }, function (err) {
             console.log(err);
             return false;
+        });
+    };
+    ShownewsComponent.prototype.onArticleSubmit = function () {
+        var _this = this;
+        var news = {
+            title: this.title,
+            content: this.content,
+        };
+        this.newsService.addNews(news).subscribe(function (data) {
+            if (data) {
+                var article = {
+                    "_id": data._id,
+                    "date": data.timestamp,
+                    "title": news.title,
+                    "content": news.content
+                };
+                _this.flashMessage.show(data.msg, { cssClass: 'alert-success', timeout: 3000 });
+                _this.articles.unshift(article);
+                // Forced reload - need sexier solution!
+            }
+            else {
+                _this.flashMessage.show('Something went wrong', { cssClass: 'alert-danger', timeout: 3000 });
+            }
         });
     };
     ShownewsComponent.prototype.destroyArticle = function (article) {
@@ -622,10 +649,10 @@ ShownewsComponent = __decorate([
         template: __webpack_require__(335),
         styles: [__webpack_require__(326)]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_news_service__["a" /* NewsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_news_service__["a" /* NewsService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_news_service__["a" /* NewsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_news_service__["a" /* NewsService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _c || Object])
 ], ShownewsComponent);
 
-var _a, _b;
+var _a, _b, _c;
 //# sourceMappingURL=shownews.component.js.map
 
 /***/ }),
@@ -730,7 +757,6 @@ var AuthService = (function () {
     AuthService.prototype.authenticateUser = function (user) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
         headers.append('Content-Type', 'application/json');
-        // ADD LOCALHOST IF WORKING LOCALLY
         return this.http.post('/users/authenticate', user, { headers: headers })
             .map(function (res) { return res.json(); });
     };
@@ -937,14 +963,14 @@ module.exports = module.exports.toString();
 /***/ 327:
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\n<div class=\"container\">\n    <flash-messages></flash-messages>\n    <router-outlet></router-outlet>\n</div>"
+module.exports = "<app-navbar></app-navbar>\r\n<div class=\"container\">\r\n    <flash-messages></flash-messages>\r\n    <router-outlet></router-outlet>\r\n</div>"
 
 /***/ }),
 
 /***/ 328:
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"page-header\">dashboard</h2>\n<p>Welcome to your dashboard</p>\n<app-news></app-news>\n<app-shownews></app-shownews>"
+module.exports = "<h2 class=\"page-header\">dashboard</h2>\r\n<p>Welcome to your dashboard</p>\r\n<app-shownews></app-shownews>"
 
 /***/ }),
 
@@ -972,28 +998,28 @@ module.exports = "<nav class=\"navbar navbar-default\">\r\n  <div class=\"contai
 /***/ 332:
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"page-header\">New Article</h2>\r\n<form (submit)=\"onArticleSubmit()\">\r\n  <div class=\"form-group\">\r\n    <label for=\"name\">Title</label>\r\n    <input id=\"title\" [(ngModel)]=\"title\"  name=\"title\" type=\"text\" class=\"form-control\">\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label for=\"username\">Content</label>\r\n    <textarea id=\"username\" [(ngModel)]=\"content\"  name=\"content\" type=\"text\" class=\"form-control\"></textarea>\r\n  </div>\r\n  <input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\r\n\r\n</form>"
+module.exports = "<h2 class=\"page-header\">New Article</h2>\r\n<form (submit)=\"onArticleSubmit()\">\r\n  <div class=\"form-group\">\r\n    <label for=\"name\">Title</label>\r\n    <input id=\"title\" [(ngModel)]=\"title\"  name=\"title\" type=\"text\" class=\"form-control\">\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label for=\"username\">Content</label>\r\n    <textarea id=\"username\" [(ngModel)]=\"content\"  name=\"content\" type=\"text\" class=\"form-control\"></textarea>\r\n  </div>\r\n  <input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\r\n\r\n</form>\r\n\r\n<app-shownews></app-shownews>"
 
 /***/ }),
 
 /***/ 333:
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"user\">\n  <h2 class=\"page-header\">{{user.name}}</h2>\n  <ul class=\"list-group\">\n    <li class=\"list-group-item\">\n      {{user.username}}\n    </li>\n    <li class=\"list-group-item\">\n      {{user.email}}\n    </li>\n  </ul>\n</div>"
+module.exports = "<div *ngIf=\"user\">\r\n  <h2 class=\"page-header\">{{user.name}}</h2>\r\n  <ul class=\"list-group\">\r\n    <li class=\"list-group-item\">\r\n      {{user.username}}\r\n    </li>\r\n    <li class=\"list-group-item\">\r\n      {{user.email}}\r\n    </li>\r\n  </ul>\r\n</div>"
 
 /***/ }),
 
 /***/ 334:
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"page-header\">Register</h2>\n<form (submit)=\"onRegisterSubmit()\">\n  <div class=\"form-group\">\n    <label for=\"name\">Name</label>\n    <input id=\"name\" [(ngModel)]=\"name\"  name=\"name\" type=\"text\" class=\"form-control\">\n  </div>\n  <div class=\"form-group\">\n    <label for=\"username\">Username</label>\n    <input id=\"username\" [(ngModel)]=\"username\"  name=\"username\" type=\"text\" class=\"form-control\">\n  </div>\n  <div class=\"form-group\">\n    <label for=\"email\">Email</label>\n    <input id=\"email\" [(ngModel)]=\"email\"  name=\"email\" type=\"text\" class=\"form-control\">\n  </div>\n  <div class=\"form-group\">\n    <label for=\"password\">Password</label>\n    <input id=\"password\" [(ngModel)]=\"password\"  name=\"password\" type=\"password\" class=\"form-control\">\n  </div>\n  <input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\n\n</form>"
+module.exports = "<h2 class=\"page-header\">Register</h2>\r\n<form (submit)=\"onRegisterSubmit()\">\r\n  <div class=\"form-group\">\r\n    <label for=\"name\">Name</label>\r\n    <input id=\"name\" [(ngModel)]=\"name\"  name=\"name\" type=\"text\" class=\"form-control\">\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label for=\"username\">Username</label>\r\n    <input id=\"username\" [(ngModel)]=\"username\"  name=\"username\" type=\"text\" class=\"form-control\">\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label for=\"email\">Email</label>\r\n    <input id=\"email\" [(ngModel)]=\"email\"  name=\"email\" type=\"text\" class=\"form-control\">\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label for=\"password\">Password</label>\r\n    <input id=\"password\" [(ngModel)]=\"password\"  name=\"password\" type=\"password\" class=\"form-control\">\r\n  </div>\r\n  <input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\r\n\r\n</form>"
 
 /***/ }),
 
 /***/ 335:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"table-responsive\">\n  <table class=\"table table-striped\">\n    <thead>\n      <tr>\n        <th>Title</th>\n        <th style=\"width: 20px;\">Content</th>\n        <th>Timestamp</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let article of articles\">\n        <td>{{article.title}}</td>\n        <td >{{article.content}}</td>\n        <td>{{article.date}}</td>\n        <td><button style=\"text-align: right\" class=\"btn\" (click)=\"destroyArticle(article)\">x</button></td>\n      </tr>\n    </tbody>\n  </table>\n</div>"
+module.exports = "<h2 class=\"page-header\">New Article</h2>\r\n<form (submit)=\"onArticleSubmit()\">\r\n  <div class=\"form-group\">\r\n    <label for=\"name\">Title</label>\r\n    <input id=\"title\" [(ngModel)]=\"title\"  name=\"title\" type=\"text\" class=\"form-control\">\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label for=\"username\">Content</label>\r\n    <textarea id=\"username\" [(ngModel)]=\"content\"  name=\"content\" type=\"text\" class=\"form-control\"></textarea>\r\n  </div>\r\n  <input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\r\n</form>\r\n\r\n<div class=\"table-responsive\">\r\n  <table class=\"table table-striped\">\r\n    <thead>\r\n      <tr>\r\n        <th>Title</th>\r\n        <th style=\"width: 20px;\">Content</th>\r\n        <th>Timestamp</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n      <tr *ngFor=\"let article of articles\">\r\n        <td>{{article.title}}</td>\r\n        <td >{{article.content}}</td>\r\n        <td>{{article.date}}</td>\r\n        <td><button style=\"text-align: right\" class=\"btn\" (click)=\"destroyArticle(article)\">x</button></td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>"
 
 /***/ }),
 
@@ -1035,7 +1061,7 @@ var NewsService = (function () {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
         headers.append('Content-Type', 'application/json');
         return this.http.post('/news/addArticle', news, { headers: headers })
-            .map(function (res) { return res.json; });
+            .map(function (res) { return res.json(); });
     };
     NewsService.prototype.getThreeArticles = function () {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();

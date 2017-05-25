@@ -22,11 +22,10 @@ router.post('/addArticle', /*passport.authenticate('jwt', {session:false}),*/ (r
     News.addArticle(newArticle, (err, article) => {
 
         if(err){
-
             //console.log(err);
             res.json({success:false, msg:'failed to add new article'});
         } else {
-            res.json({success:true, msg:'article has been submitted'});
+            res.json({success:true, _id: article._id, timestamp: article.date, msg:'article has been submitted'});
     }
     });
 

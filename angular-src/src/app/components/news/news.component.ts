@@ -14,6 +14,8 @@ export class NewsComponent implements OnInit {
   title: String;
   content: String;
 
+
+
   constructor(
       private flashMessage: FlashMessagesService,
       private newsService: NewsService,
@@ -37,9 +39,8 @@ export class NewsComponent implements OnInit {
     this.newsService.addNews(news).subscribe(data => {
       if(data) {
         this.flashMessage.show('Article made', {cssClass: 'alert-success', timeout: 3000});
-
         // Forced reload - need sexier solution!
-        location.reload();
+//        location.reload();
       } else {
         this.flashMessage.show('Something went wrong', {cssClass: 'alert-danger', timeout: 3000});
 

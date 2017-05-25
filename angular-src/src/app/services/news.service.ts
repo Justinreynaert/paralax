@@ -14,7 +14,9 @@ export class NewsService {
     let headers = new Headers();
     headers.append('Content-Type','application/json');
       return this.http.post('http://localhost:4500/news/addArticle', news, {headers: headers})
-          .map(res => res.json)
+          .map(res => res.json());
+
+
   }
 
   getThreeArticles() {
