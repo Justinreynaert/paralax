@@ -1,4 +1,4 @@
-window.onload = () => {
+window.onload = function() {
 
     const eNav = document.getElementById('nav');
     let eNavHeight = eNav.offsetHeight;
