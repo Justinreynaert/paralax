@@ -4,7 +4,7 @@ window.onload = function() {
     var eNavHeight = eNav.offsetHeight;
     console.log(window.innerHeight);
 
-    window.onscroll = () => {
+    window.onscroll = function() {
         if (window.pageYOffset > eNavHeight) {
             if (eNav.className !== 'Navfixed') {
 
