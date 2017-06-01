@@ -1,7 +1,7 @@
 window.onload = function() {
 
     const eNav = document.getElementById('nav');
-    let eNavHeight = eNav.offsetHeight;
+    var eNavHeight = eNav.offsetHeight;
     console.log(window.innerHeight);
 
     window.onscroll = () => {
